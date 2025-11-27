@@ -1,5 +1,5 @@
 body {
-    font-family: Garamond, serif;
+    font-family: 'EB Garamond', Garamond, serif;
     background-color: #fffdfa;
     color: #0d0c0c;
     margin: 0;
@@ -72,7 +72,7 @@ p {
 }
 
 .contact-section {
-  padding: 20px 40px;
+  padding: 20px 40px 80px;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -125,14 +125,15 @@ p {
 }
 
 .cv-button {
+  display: inline-block;        /* makes the link behave like a button */
   font-family: inherit;
   background: none;
   border: 1px solid #0d0c0c;
   padding: 6px 14px;
   cursor: pointer;
   font-size: inherit;
-  margin: 10px 0 25px 0;
   color: inherit;
+  text-decoration: none;        /* remove underline */
 }
 
 .cv-button:hover {
