@@ -19,7 +19,7 @@ body {
   width: 220px;
   height: 220px;
   object-fit: cover;
-  border-radius: 50%;             /* circular photo */
+  border-radius: 50%;
 }
 
 .hero-right h1 {
@@ -139,6 +139,27 @@ p {
 .cv-button:hover {
   background-color: #f0ece3;
 }
+
+.thesis-button {
+  display: inline-block;        /* makes the link behave like a button */
+  font-family: inherit;
+  background: none;
+  border: 1px solid #0d0c0c;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;        /* remove underline */
+}
+
+.thesis-button:hover {
+  background-color: #f0ece3;
+}
+
+.thesis-button-container {
+  text-align: center;
+}
+
 
 .research-list p strong {
   font-weight: bold;
