@@ -13,6 +13,16 @@
   </head>
   
   <body>
+    <nav class="site-nav" aria-label="Section navigation">
+      <a href="#about">About</a>
+      <span class="nav-dot" aria-hidden="true">·</span>
+      <a href="#research">Research</a>
+      <span class="nav-dot" aria-hidden="true">·</span>
+      <a href="#projects">Projects</a>
+      <span class="nav-dot" aria-hidden="true">·</span>
+      <a href="#contact">Contact</a>
+    </nav>
+
     <div class="hero">
       <div class="hero-left">
         <img src="img/oishani.jpg" alt="Photo of Oishani Bandopadhyay">
@@ -31,7 +41,7 @@
       </div>
     </div>
 
-    <div class="about-section">
+    <div class="about-section" id="about">
       <h2>About</h2>
       <p>
         Hello! I'm Oishani Bandopadhyay, currently a graduate student in the Computational Social Science MS Program at UCSD. 
@@ -53,7 +63,7 @@
     </div>
 
 
-    <div class="research-section">
+    <div class="research-section" id="research">
     <h2>Research Interests</h2>
 
     <p>I've worked in many interdisciplinary settings, and have always enjoyed using computational methods and language data. 
@@ -65,29 +75,187 @@
       </a>
     </div>
 
-    <p>For my undergraduate Honors Thesis, I designed a research experiment to evaluate accuracy differences in ASR (Automatic Speech Recognition)
-      systems using WER (Word Error Rates) for Indian and non-Indian dialects of English. Here is the link to view it on github : 
-      <a href="https://github.com/oishani-b/asr_indian_dialects/blob/06c3c33081cf54c67aaf4587688b841a115df6fb/Evaluating%20ASR%20Systems%20Accuracy%20Using%20Word%20Error%20Rate%20Across%20Indian%20and%20Standard%20US%20Dialects.pdf" 
-      target="_blank" rel="noopener noreferrer">Oishani's Honors Thesis</a>
-    </p>
-
-    <div class="thesis-button-container">
-      <a href="honors_thesis.pdf" download class="thesis-button">
-        Download Honors Thesis
-      </a>
-    </div>
-
     <div class="research-list">
       <p><strong>Natural Language Processing:</strong> work with ASR (Automatic Speech Recognition), LLMs, and AI solutions using speech processing, language modeling, and deep learning methods </p>
       <p><strong>Computational Linguistics:</strong> applying computational methods to answer questions in linguistics, using spectrograms, forced alignment, and statistical modeling </p>
       <p><strong>Cognition and Behavioral Research:</strong> using behavioral research and experimental methods to understand human and machine perceptions of language and their cognitive representations</p>
       <p><strong>Sociophonetics and Variation:</strong> how dialectal variation is observed and represented phonetically, Indian English dialects, Indian languages, and variation in speech of multilingual speakers</p>
     </div>
+
+    <div class="project-card thesis-card">
+      <div class="project-visual">
+        <img src="img/honors.png" alt="Honors Thesis Visual">
+      </div>
+      <h3>Honors Thesis</h3>
+      <p>For my undergraduate Honors Thesis, I designed a research experiment to evaluate accuracy differences in ASR (Automatic Speech Recognition)
+      systems using WER (Word Error Rates) for Indian and non-Indian dialects of English. Below is the link to view it on github. </p>
+      <p class="project-links">
+        <a href="https://github.com/oishani-b/asr_indian_dialects/blob/06c3c33081cf54c67aaf4587688b841a115df6fb/Evaluating%20ASR%20Systems%20Accuracy%20Using%20Word%20Error%20Rate%20Across%20Indian%20and%20Standard%20US%20Dialects.pdf" 
+      target="_blank" rel="noopener noreferrer">Honors Thesis</a>
+        <span class="nav-dot thesis-dot" aria-hidden="true">·</span>
+        <a href="https://github.com/oishani-b/asr_indian_dialects" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+      </p>
+    </div>
+
+    <p>You can also download and view the complete paper here:
+      <a href="honors_thesis.pdf" download>Download Oishani's Honors Thesis</a>
+    </p>
   </div>
 
 
 
-    <div class="contact-section">
+    <div class="projects-section" id="projects">
+    <h2>Projects</h2>
+
+    <p>Here are some interesting projects I've worked on. You can scroll through them, and visit the repositories for the code and reports. If you have any thoughts or feedback, I'd love to hear it!</p>
+
+    <div class="project-carousel" aria-label="Project carousel">
+      
+      <div class="project-card">
+        <div class="project-visual">
+          <img src="img/lda_health.png" alt="Topic Modeling on Health News Tweets with Latent Dirichlet Allocation">
+        </div>
+        <h3>Topic Modeling on Health News Tweets with Latent Dirichlet Allocation</h3>
+        <p>
+          Investigating LDA on short, specific health news text data and subsets of women's, men's and children's health to see differences in salience and frequency of terms across subsets
+        </p>
+        <p class="project-links">
+          <a href="https://github.com/oishani-b/health_news_LDA_topics" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        </p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-visual">
+          <img src="img/scarfs.png" alt="Analyzing Linguistic Variables to Predict Successful Communication">
+        </div>
+        <h3>Analyzing Linguistic Variables to Predict Successful Communication</h3>
+        <p>
+          Predicting successful communication outcomes on linguistic properties of expressions using linear regression models and chi-square tests
+        </p>
+        <p class="project-links">
+          <a href="https://github.com/oishani-b/linguistic_regression_analysis_scarfs" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        </p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-visual">
+          <img src="img/gpt_surprisal.png" alt="Evaluating LLM Gender Stereotypes Using Surprisal">
+        </div>
+        <h3>Evaluating LLM Gender Stereotypes Using Surprisal</h3>
+        <p>
+          This project uses surprisal as a metric to evaluate properties of LLMs. By using pairwise gendered words, and calculating surprisal for each pair, the sensitivity to gender stereotypes in GPT-2 is presented
+        </p>
+        <p class="project-links">
+          <a href="https://github.com/oishani-b/LLM_Gender_Eval" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        </p>
+      </div>
+      
+      <div class="project-card">
+        <div class="project-visual">
+          <img src="img/brainy_bot.png" alt="BrainyBot Personalized Learning Tutor for NLP Class">
+        </div>
+        <h3>BrainyBot Personalized Learning Tutor for NLP Class</h3>
+        <p>
+          BrainyBot is a personalized AI ChatBot for LIGN 167, a course at UC San Diego in deep learning and natural language processing
+        </p>
+        <p class="project-links">
+          <a href="https://github.com/oishani-b/gpt-tutor" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        </p>
+      </div> 
+
+      <div class="project-card">
+        <div class="project-visual">
+          <img src="img/spotify_pca.png" alt="Spotify Recommender System with Clustering and PCA">
+        </div>
+        <h3>Spotify Recommender System with Clustering and PCA</h3>
+        <p>
+          This project is a Music Recommendation System designed to provide personalized song recommendations based on input criteria.
+        </p>
+        <p class="project-links">
+          <a href="https://github.com/oishani-b/PCA_for_Spotify_Recs" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        </p>
+      </div>
+      
+      <div class="project-card">
+        <div class="project-visual">
+          <img src="img/supervised.png" alt="Supervised Classification Model Evaluation Across Datasets">
+        </div>
+        <h3>Supervised Classification Model Evaluation Across Datasets</h3>
+        <p>
+          Evaluation of five different classifier algorithms: Logistic Regression, KNN, Random Forest, Decision Tree, and SVM, across 4 datasets, on test accuracy and cross validation mean accuracy
+        </p>
+        <p class="project-links">
+          <a href="https://github.com/oishani-b/ML_Models_Evaluation" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        </p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-visual">
+          <img src="img/forced_align.png" alt="Neural Forced Alignment Applied to Indian Dialectal Speech">
+        </div>
+        <h3>Neural Forced Alignment Applied to Indian Dialectal Speech</h3>
+        <p>
+          Forced Alignment (Charsiu Forced Aligner) Tested on Dialectal English and Code-Switched English
+        </p>
+        <p class="project-links">
+          <a href="https://github.com/oishani-b/forced_alignment_dialectal" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        </p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-visual">
+          <img src="img/xai.png" alt="Techniques in Explainable AI (XAI) Presentation">
+        </div>
+        <h3>Techniques in Explainable AI (XAI) Presentation</h3>
+        <p>
+          Presentation Project on Explainable AI Techniques such as SHAP and LIME, including industry applications and areas for improvement.
+        </p>
+        <p class="project-links">
+          <a href="https://github.com/oishani-b/explainable_explainers" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        </p>
+      </div>
+    
+    </div>
+  </div>
+
+
+
+    <div class="interests-section" id="interests">
+    <h2>Other Interests</h2>
+
+    <p>I really enjoyed leading student organizations and tutoring as an undergraduate. In my free time, I write poetry, hike, and pet dogs. </p>
+
+    <div class="interests-layout">
+      <div class="interest-photos interest-photos--left">
+        <img src="img/cssa.jpg" alt="Other interest photo 1">
+        <img src="img/hike.jpg" alt="Other interest photo 2">
+      </div>
+
+      <div class="project-card interests-card">
+        <iframe
+          title="Instagram profile: amusingsofaperson"
+          src="https://www.instagram.com/amusingsofaperson/embed"
+          allowtransparency="true"
+          scrolling="yes"
+          frameborder="0">
+        </iframe>
+        <p class="instagram-fallback">
+          <a href="https://www.instagram.com/amusingsofaperson/" target="_blank" rel="noopener noreferrer">
+            View on Instagram
+          </a>
+        </p>
+      </div>
+
+      <div class="interest-photos interest-photos--right">
+        <img src="img/feynman.jpg" alt="Other interest photo 3">
+        <img src="img/writing_hub.png" alt="Other interest photo 4">
+      </div>
+    </div>
+  </div>
+
+
+
+    <div class="contact-section" id="contact">
     <h2>Contact</h2>
 
     <p>For any questions, collaborations, or just to chat, feel free to email me!</p>
